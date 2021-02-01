@@ -3,27 +3,53 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		27E60B8425C3F9A700B8E3CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E60B8325C3F9A700B8E3CC /* AppDelegate.swift */; };
-		27E60B8625C3F9A700B8E3CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E60B8525C3F9A700B8E3CC /* SceneDelegate.swift */; };
 		27E60B8825C3F9A700B8E3CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E60B8725C3F9A700B8E3CC /* ViewController.swift */; };
 		27E60B8B25C3F9A700B8E3CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E60B8925C3F9A700B8E3CC /* Main.storyboard */; };
 		27E60B8D25C3F9A900B8E3CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27E60B8C25C3F9A900B8E3CC /* Assets.xcassets */; };
 		27E60B9025C3F9A900B8E3CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E60B8E25C3F9A900B8E3CC /* LaunchScreen.storyboard */; };
+		27E60B9D25C3FC2B00B8E3CC /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E60B9B25C3FC2B00B8E3CC /* RSA.m */; };
+		27E60BA025C3FCA300B8E3CC /* ObjEncryptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E60B9F25C3FCA300B8E3CC /* ObjEncryptionManager.swift */; };
+		27E60BB125C4009600B8E3CC /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E60BB025C4009600B8E3CC /* RSA.swift */; };
+		27E60BB525C400C900B8E3CC /* SwiftyRSA in Frameworks */ = {isa = PBXBuildFile; productRef = 27E60BB425C400C900B8E3CC /* SwiftyRSA */; };
+		27E60BB625C400C900B8E3CC /* SwiftyRSA in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 27E60BB425C400C900B8E3CC /* SwiftyRSA */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		27E60BB925C400F300B8E3CC /* SwiftEncryptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E60BB825C400F300B8E3CC /* SwiftEncryptionManager.swift */; };
+		27E60BBB25C401CF00B8E3CC /* ASN1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E60BBA25C401CF00B8E3CC /* ASN1.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		27E60BB725C400C900B8E3CC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				27E60BB625C400C900B8E3CC /* SwiftyRSA in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		27E60B8025C3F9A700B8E3CC /* test_rsa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_rsa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27E60B8325C3F9A700B8E3CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27E60B8525C3F9A700B8E3CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		27E60B8725C3F9A700B8E3CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		27E60B8A25C3F9A700B8E3CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27E60B8C25C3F9A900B8E3CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27E60B8F25C3F9A900B8E3CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27E60B9125C3F9A900B8E3CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27E60B9A25C3FC2A00B8E3CC /* test_rsa-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test_rsa-Bridging-Header.h"; sourceTree = "<group>"; };
+		27E60B9B25C3FC2B00B8E3CC /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		27E60B9C25C3FC2B00B8E3CC /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		27E60B9F25C3FCA300B8E3CC /* ObjEncryptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjEncryptionManager.swift; sourceTree = "<group>"; };
+		27E60BB025C4009600B8E3CC /* RSA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSA.swift; sourceTree = "<group>"; };
+		27E60BB825C400F300B8E3CC /* SwiftEncryptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEncryptionManager.swift; sourceTree = "<group>"; };
+		27E60BBA25C401CF00B8E3CC /* ASN1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27E60BB525C400C900B8E3CC /* SwiftyRSA in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +83,45 @@
 		27E60B8225C3F9A700B8E3CC /* test_rsa */ = {
 			isa = PBXGroup;
 			children = (
-				27E60B8325C3F9A700B8E3CC /* AppDelegate.swift */,
-				27E60B8525C3F9A700B8E3CC /* SceneDelegate.swift */,
 				27E60B8725C3F9A700B8E3CC /* ViewController.swift */,
+				27E60BA325C3FCE400B8E3CC /* Swift */,
+				27E60BA225C3FCD200B8E3CC /* Objc */,
+				27E60BA425C3FCEF00B8E3CC /* Other */,
+			);
+			path = test_rsa;
+			sourceTree = "<group>";
+		};
+		27E60BA225C3FCD200B8E3CC /* Objc */ = {
+			isa = PBXGroup;
+			children = (
+				27E60B9C25C3FC2B00B8E3CC /* RSA.h */,
+				27E60B9B25C3FC2B00B8E3CC /* RSA.m */,
+				27E60B9F25C3FCA300B8E3CC /* ObjEncryptionManager.swift */,
+			);
+			path = Objc;
+			sourceTree = "<group>";
+		};
+		27E60BA325C3FCE400B8E3CC /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				27E60BBA25C401CF00B8E3CC /* ASN1.swift */,
+				27E60BB025C4009600B8E3CC /* RSA.swift */,
+				27E60BB825C400F300B8E3CC /* SwiftEncryptionManager.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		27E60BA425C3FCEF00B8E3CC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				27E60B8325C3F9A700B8E3CC /* AppDelegate.swift */,
 				27E60B8925C3F9A700B8E3CC /* Main.storyboard */,
 				27E60B8C25C3F9A900B8E3CC /* Assets.xcassets */,
 				27E60B8E25C3F9A900B8E3CC /* LaunchScreen.storyboard */,
 				27E60B9125C3F9A900B8E3CC /* Info.plist */,
+				27E60B9A25C3FC2A00B8E3CC /* test_rsa-Bridging-Header.h */,
 			);
-			path = test_rsa;
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,12 +134,16 @@
 				27E60B7C25C3F9A700B8E3CC /* Sources */,
 				27E60B7D25C3F9A700B8E3CC /* Frameworks */,
 				27E60B7E25C3F9A700B8E3CC /* Resources */,
+				27E60BB725C400C900B8E3CC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = test_rsa;
+			packageProductDependencies = (
+				27E60BB425C400C900B8E3CC /* SwiftyRSA */,
+			);
 			productName = test_rsa;
 			productReference = 27E60B8025C3F9A700B8E3CC /* test_rsa.app */;
 			productType = "com.apple.product-type.application";
@@ -98,6 +159,7 @@
 				TargetAttributes = {
 					27E60B7F25C3F9A700B8E3CC = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -110,6 +172,9 @@
 				Base,
 			);
 			mainGroup = 27E60B7725C3F9A700B8E3CC;
+			packageReferences = (
+				27E60BB325C400C900B8E3CC /* XCRemoteSwiftPackageReference "SwiftyRSA" */,
+			);
 			productRefGroup = 27E60B8125C3F9A700B8E3CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +202,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27E60B9D25C3FC2B00B8E3CC /* RSA.m in Sources */,
 				27E60B8825C3F9A700B8E3CC /* ViewController.swift in Sources */,
+				27E60BA025C3FCA300B8E3CC /* ObjEncryptionManager.swift in Sources */,
 				27E60B8425C3F9A700B8E3CC /* AppDelegate.swift in Sources */,
-				27E60B8625C3F9A700B8E3CC /* SceneDelegate.swift in Sources */,
+				27E60BBB25C401CF00B8E3CC /* ASN1.swift in Sources */,
+				27E60BB925C400F300B8E3CC /* SwiftEncryptionManager.swift in Sources */,
+				27E60BB125C4009600B8E3CC /* RSA.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,15 +355,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QQ482S29QV;
-				INFOPLIST_FILE = test_rsa/Info.plist;
+				INFOPLIST_FILE = test_rsa/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "yohoho.test-rsa";
+				PRODUCT_BUNDLE_IDENTIFIER = "yohoho.test-rsa2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "test_rsa/Other/test_rsa-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,15 +378,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QQ482S29QV;
-				INFOPLIST_FILE = test_rsa/Info.plist;
+				INFOPLIST_FILE = test_rsa/Other/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "yohoho.test-rsa";
+				PRODUCT_BUNDLE_IDENTIFIER = "yohoho.test-rsa2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "test_rsa/Other/test_rsa-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -341,6 +417,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		27E60BB325C400C900B8E3CC /* XCRemoteSwiftPackageReference "SwiftyRSA" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lexon/SwiftyRSA";
+			requirement = {
+				branch = feature/spm;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		27E60BB425C400C900B8E3CC /* SwiftyRSA */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 27E60BB325C400C900B8E3CC /* XCRemoteSwiftPackageReference "SwiftyRSA" */;
+			productName = SwiftyRSA;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 27E60B7825C3F9A700B8E3CC /* Project object */;
 }

@@ -8,10 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var objCRSA: EncryptionManagerProtocol!
+    var swiftRSA: EncryptionManagerProtocol!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .purple
+        
+        objCRSA = ObjEncryptionManager()
+        swiftRSA = SwiftEncryptionManager()
+        
+        ()
     }
 
 

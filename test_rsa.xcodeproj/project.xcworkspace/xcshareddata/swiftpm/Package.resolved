@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftyRSA",
+        "repositoryURL": "https://github.com/lexon/SwiftyRSA",
+        "state": {
+          "branch": "feature/spm",
+          "revision": "b315992324b25ea2ecc8fd2c58409626d7922780",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
